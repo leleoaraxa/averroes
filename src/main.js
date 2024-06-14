@@ -3,6 +3,9 @@
 // DayJS
 import "./libs/dayjs.js"
 
+// Modules
+import './modules/details.js';
+
 // CSS
 import "./styles/global.css"
 import "./styles/form.css"
