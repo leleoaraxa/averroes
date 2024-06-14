@@ -7,6 +7,8 @@
 
 ## Como rodar o projeto
 ```bash
-npm install
-npm run dev
+npm install # Instala dependências
+npm run build # Compila
+npm run server # Servidor
+npm run dev # Web
 ```
