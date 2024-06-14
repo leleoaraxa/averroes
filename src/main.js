@@ -4,7 +4,7 @@
 import "./libs/dayjs.js"
 
 // Modules
-import './modules/details.js';
+import './modules/getClient.js';
 
 // CSS
 import "./styles/global.css"

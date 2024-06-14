@@ -1,6 +1,6 @@
 import { apiConfig } from "./api-config.js"
 
-export async function getClients({ id }) {
+export async function getClientById({ id }) {
   const url = `${apiConfig.baseURL}/clients/${id}`;
 
   const response = await fetch(url)
