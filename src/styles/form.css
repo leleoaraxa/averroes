@@ -52,16 +52,3 @@
         border-color: var(--main---pink);
     }
 }
-
-.suggestion {
-    margin-top: .25rem;
-    display: inline-block;
-
-    button {
-        text-decoration: underline;
-        color: var(--main---pink);
-        border: none;
-        cursor: pointer;
-        background: transparent;
-    }
-}
