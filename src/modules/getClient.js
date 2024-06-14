@@ -1,4 +1,5 @@
-import { getClientById } from "../services/clientById.js";
+import { getClientById } from "../services/clientById.js"
+import { clientDetails } from "../services/clientDetails.js"
 
 const form = document.querySelector('form')
 const input = document.getElementById('card-id')
@@ -13,7 +14,7 @@ form.addEventListener('submit', async (event) => {
     const { name, clientSince, appointmentHistory, image, loyaltyCard } = client
     const { totalCuts, cutsNeeded, cutsRemaining } = loyaltyCard
 
-    alert(name)
+    clientDetails({ name, clientSince, image })
 })
 
 input.addEventListener('input', (event) => {
