@@ -3,7 +3,7 @@
 ### Member Club
 > Gerenciamento de Cartão Fidelidade desktop e mobile!
 
-![Member Club | Cartão de Fidelidade](./image/capa.png)
+![Member Club | Cartão de Fidelidade](./image/capa.jpg)
 
 ## Como rodar o projeto
 ```bash
