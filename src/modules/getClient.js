@@ -1,5 +1,8 @@
 import { getClientById } from "../services/clientById.js"
-import { clientDetails } from "../services/clientDetails.js"
+import { clientCard } from "./clientCard.js"
+import { fidelityCard } from "./fidelityCard.js"
+import { historyCard } from "./historyCard.js"
+import { progressCard } from "./progressCard.js"
 
 const form = document.querySelector('form')
 const input = document.getElementById('card-id')
@@ -14,7 +17,10 @@ form.addEventListener('submit', async (event) => {
     const { name, clientSince, appointmentHistory, image, loyaltyCard } = client
     const { totalCuts, cutsNeeded, cutsRemaining } = loyaltyCard
 
-    clientDetails({ name, clientSince, image })
+    clientCard({ name, clientSince, image })
+    fidelityCard({ id: data['card-id'], cutsNeeded, totalCuts })
+    historyCard({ appointmentHistory })
+    progressCard({ totalCuts, cutsNeeded, cutsRemaining })
 })
 
 input.addEventListener('input', (event) => {

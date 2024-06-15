@@ -1,6 +1,6 @@
 const profile = document.querySelector('.profile');
 
-export function clientDetails({
+export function clientCard({
     name,
     clientSince,
     image: userImageURL
